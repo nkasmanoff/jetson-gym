@@ -19,7 +19,7 @@ nano \
 && rm -rf /var/lib/apt/lists/*
 
 
-RUN apt-get install swig
+
 # alias python3 -> python
 RUN rm /usr/bin/python && \
 ln -s /usr/bin/python3 /usr/bin/python && \
@@ -27,6 +27,4 @@ ln -s /usr/bin/pip3 /usr/bin/pip
 
 RUN pip install --upgrade pip
 # run req.txt and jupyter
-
-
 RUN pip install -r requirements.txt
