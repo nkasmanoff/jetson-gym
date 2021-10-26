@@ -7,7 +7,8 @@ ENV SHELL /bin/bash
 WORKDIR /home/noah/jetson-gym
 COPY . /home/noah/jetson-gym
 
-
+# to allow rendering via server
+RUN  export DISPLAY=:0
 
 #
 # install development packages

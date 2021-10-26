@@ -10,9 +10,16 @@ such agents to succeed in the environments indicated by sub-folder.
 
 To build:
 
-  # sudo docker build -t nsk367/jetson_gym .
+## sudo docker build -t nsk367/jetson_gym .
 
 
 To run:
 
-  # sudo docker run --runtime nvidia -it --rm --network host --volume ~/jetson-gym:/jetson-gym nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-r32.6.1
+## sudo docker run --runtime nvidia -it --rm --network host --volume ~/jetson-gym:/jetson-gym nsk367/jetson_gym
+
+
+## TODO
+
+  Pick an environment to get on the leaderboard of
+
+  Set up MLOps ready code for training various agents
